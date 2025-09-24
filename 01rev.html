@@ -1,0 +1,74 @@
+<script>
+    /*
+    Soma de Pares
+    Crie um programa que tenha um array de números: [15, 8, 90, 75, 102, 6, 43].
+    O programa deve primeiro pedir ao usuário para adicionar um novo número à lista.
+    Depois, usando for...of, o programa deve percorrer o array e calcular a soma apenas dos números pares.
+    Ao final, exiba a soma total dos números pares encontrados.
+    */
+
+    let listaDenumeros = [15, 8, 90, 75, 102, 6, 43];
+
+    const numero = Number(prompt(`Adicione um novo número à lista`));
+
+    let resultado = 0;
+
+    listaDenumeros.push(numero);
+
+    for (let item of listaDenumeros) {
+        if (item % 2 == 0) {
+            resultado += item;
+        }
+
+    }
+
+    
+    document.write(`A soma total é ${resultado}`);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    html {
+        align-items: center;
+        text-align: center;
+        font-size: 10vw;
+    }
+</style>
