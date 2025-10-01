@@ -6,4 +6,12 @@
     Usando for...of, calcule o custo total de todas as contas já com o juro aplicado.
     Apresente para o usuário qual será o valor final da compra.
     */
+   listaDecontas = [50.00, 15.50, 120.00, 80];
+   const juro = Number(prompt(`Quanto vai ser o juros`));
+   let custo = 0;
+   for(let item of listaDecontas){
+     custo += item + ((item * juro)/100);
+
+   }
+   alert(custo.toFixed(2));
 </script>

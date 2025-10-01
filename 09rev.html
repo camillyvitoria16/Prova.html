@@ -8,4 +8,16 @@
     Apresente para o usuário quais itens ele conseguirá comprar no mercado.
 
     */
+    listaDeCompras = ['pão', 'queijo', 'leite', 'suco'];
+    const itensDisponiveis = ['maçã', 'pão', 'leite', 'manteiga', 'café'];
+
+    let carrinho = [];
+
+    for (item of listaDeCompras) {
+        if (itensDisponiveis.includes(item)) {
+            carrinho.push(item);
+        }
+    }
+
+    alert(`Os itens disponíveis para compra são: ${carrinho.join(", ")}`);
 </script>
