@@ -8,7 +8,7 @@
     */
     listaDecidades = ["Recife", "Salvador", "Rio de Janeiro", "São Paulo", "Manaus"];
     cidades = [];
-    const cidade = prompt(`Digite uma Letra!!.`);
+    const cidade = prompt(`Digite uma Letra!!.`).toUpperCase();
     
     for(let item of listaDecidades){
         if(item.charAt(0) == cidade) {
