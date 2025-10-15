@@ -13,11 +13,11 @@
 
     let carrinho = [];
 
-    for (item of listaDeCompras) {
+    for ( let item of listaDeCompras) {
         if (itensDisponiveis.includes(item)) {
             carrinho.push(item);
         }
     }
 
-    alert(`Os itens disponíveis para compra são: ${carrinho.join(", ")}`);
-</script>
+    alert(`Os itens disponíveis para comprar \nEles são: ${carrinho.join(", ")}`);
+</script> 
